@@ -1,0 +1,76 @@
+{
+  "name": "$t:selector",
+  "version": "1.0.0",
+  "types": ["array"],
+  "icon": "playlist_add_check",
+  "recommended": {
+    "length": 100
+  },
+  "options": {
+    "choices": {
+      "name": "$t:choices",
+      "comment": "$t:choices_comment",
+      "interface": "json",
+      "default": {
+        "value1": {
+          "label": "$t:option 1",
+          "image": "https://example.com/image.jpg"
+        },
+        "value2": {
+          "label": "$t:option 2",
+          "image": "https://example.com/image.jpg"
+        },
+        "value3": {
+          "label": "$t:option 3",
+          "image": "https://example.com/image.jpg"
+        },
+        "value4": {
+          "label": "$t:option 4",
+          "image": "https://example.com/image.jpg"
+        },
+        "value5": {
+          "label": "$t:option 5",
+          "image": "https://example.com/image.jpg"
+        }
+      }
+    },
+    "multiselect": {
+      "name": "$t:multiselect",
+      "comment": "$t:multiselect_comment",
+      "interface": "toggle",
+      "default": true
+    },
+    "wrapWithDelimiter": {
+      "name": "$t:wrap",
+      "comment": "$t:wrap_comment",
+      "interface": "toggle",
+      "default": true
+    },
+    "formatting": {
+      "name": "$t:format",
+      "comment": "$t:format_comment",
+      "interface": "radio-buttons",
+      "default": "text",
+      "options": {
+        "choices": {
+          "text": "Display Text",
+          "value": "Value"
+        }
+      }
+    }
+  },
+  "translation": {
+    "en-US": {
+      "selector": "Image Based Selector",
+      "choices": "Choices",
+      "choices_comment": "Enter JSON key value pairs with the saved value and displayed text",
+      "multiselect": "Multi-Select",
+      "multiselect_comment": "Allow the selection of multiple options",
+      "option": "Option",
+      "wrap": "Wrap with Delimiter",
+      "wrap_comment": "Wrap the values with a pair of delimiters to allow strict searching for a single value",
+      "format": "Browse Format",
+      "format_comment": "The output format on the Browse Items page"
+    }
+  }
+}
